@@ -1,0 +1,13 @@
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\bin\Debug\VisualCircuitry.exe.config
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.csprojResolveAssemblyReference.cache
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.Controls.NodeControl.resources
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.Form1.resources
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.Properties.Resources.resources
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.csproj.GenerateResource.Cache
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\bin\Debug\VisualCircuitry.exe
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\bin\Debug\VisualCircuitry.pdb
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\bin\Debug\Circuitry.dll
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\bin\Debug\Circuitry.pdb
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.exe
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.pdb
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.Controls.AndGateControl.resources
