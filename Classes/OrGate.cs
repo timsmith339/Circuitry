@@ -2,7 +2,7 @@
 
 namespace Circuitry.Classes
 {
-    public class AndGate : IComponent
+    public class OrGate : IComponent
     {
         public delegate void StateSwitchedHandler(object sender, StateSwitchedEventArgs state);
         public event Node.StateSwitchedHandler StateSwitched;
@@ -12,10 +12,10 @@ namespace Circuitry.Classes
         public Node TailNode1 { get; private set; }
         public Node TailNode2 { get; private set; }
 
-        public AndGate()
+        public OrGate()
         {
             State = ComponentState.Off;
-            StateSwitched += AndGate_StateSwitched;
+            StateSwitched += OrGate_StateSwitched;
             TailNode1 = new Node();
             TailNode2 = new Node();
             TailNode1.StateSwitched += TailNode_StateSwitched;
@@ -35,7 +35,7 @@ namespace Circuitry.Classes
 
         public ComponentState EvaluateState()
         {
-            if (TailNode1.State == TailNode2.State &&
+            if (TailNode1.State == ComponentState.On ||
                 TailNode2.State == ComponentState.On)
                 return ComponentState.On;
             return ComponentState.Off;
@@ -49,7 +49,7 @@ namespace Circuitry.Classes
                 handler(this, new StateSwitchedEventArgs(State));
         }
 
-        void AndGate_StateSwitched(object sender, StateSwitchedEventArgs state)
+        void OrGate_StateSwitched(object sender, StateSwitchedEventArgs state)
         {
             if (HeadNode != null)
                 HeadNode.SwitchStates();

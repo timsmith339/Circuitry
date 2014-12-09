@@ -2,24 +2,20 @@
 
 namespace Circuitry.Classes
 {
-    public class AndGate : IComponent
+    public class NotGate : IComponent
     {
         public delegate void StateSwitchedHandler(object sender, StateSwitchedEventArgs state);
         public event Node.StateSwitchedHandler StateSwitched;
         public ComponentState State { get; private set; }
         public Node HeadNode { get; private set; }
+        public Node TailNode { get; private set; }
 
-        public Node TailNode1 { get; private set; }
-        public Node TailNode2 { get; private set; }
-
-        public AndGate()
+        public NotGate()
         {
-            State = ComponentState.Off;
-            StateSwitched += AndGate_StateSwitched;
-            TailNode1 = new Node();
-            TailNode2 = new Node();
-            TailNode1.StateSwitched += TailNode_StateSwitched;
-            TailNode2.StateSwitched += TailNode_StateSwitched;
+            State = ComponentState.On;
+            StateSwitched += NotGate_StateSwitched;
+            TailNode = new Node();
+            TailNode.StateSwitched += TailNode_StateSwitched;
         }
 
         public void SetHeadNode(Node headNode)
@@ -35,10 +31,9 @@ namespace Circuitry.Classes
 
         public ComponentState EvaluateState()
         {
-            if (TailNode1.State == TailNode2.State &&
-                TailNode2.State == ComponentState.On)
-                return ComponentState.On;
-            return ComponentState.Off;
+            if (TailNode.State == ComponentState.On)
+                return ComponentState.Off;
+            return ComponentState.On;
         }
 
         public void SwitchStates()
@@ -49,7 +44,7 @@ namespace Circuitry.Classes
                 handler(this, new StateSwitchedEventArgs(State));
         }
 
-        void AndGate_StateSwitched(object sender, StateSwitchedEventArgs state)
+        void NotGate_StateSwitched(object sender, StateSwitchedEventArgs state)
         {
             if (HeadNode != null)
                 HeadNode.SwitchStates();

@@ -11,3 +11,5 @@ C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\
 C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.exe
 C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.pdb
 C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.Controls.AndGateControl.resources
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.Controls.OrGateControl.resources
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\VisualCircuitry\obj\Debug\VisualCircuitry.Controls.NotGateControl.resources

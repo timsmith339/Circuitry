@@ -45,6 +45,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\NodeLinker.cs" />
+    <Compile Include="Controls\NotGateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NotGateControl.Designer.cs">
+      <DependentUpon>NotGateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OrGateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OrGateControl.Designer.cs">
+      <DependentUpon>OrGateControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\AndGateControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -65,6 +77,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\NotGateControl.resx">
+      <DependentUpon>NotGateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OrGateControl.resx">
+      <DependentUpon>OrGateControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\AndGateControl.resx">
       <DependentUpon>AndGateControl.cs</DependentUpon>
     </EmbeddedResource>
