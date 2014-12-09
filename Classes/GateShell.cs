@@ -8,5 +8,6 @@ namespace Circuitry.Classes
 {
     class GateShell
     {
+        //This is a comment
     }
 }
