@@ -6,29 +6,27 @@ namespace Circuitry
     {
         static void Main(string[] args)
         {
+            var notGate = new NotGate();
             var node1 = new Node();
 
-            var andGate1 = new AndGate();
-            andGate1.SetHeadNode(node1);
+            notGate.RegisterListener(node1);
 
-            var andGate2 = new AndGate();
-            andGate2.SetHeadNode(andGate1.TailNode1);
+            var andGate1 = new OrGate();
+            var node3 = new Node();
+            var node4 = new Node();
 
-            var andGate3 = new AndGate();
-            andGate3.SetHeadNode(andGate1.TailNode2);
+            node1.RegisterListener(andGate1);
 
-            andGate2.TailNode1.SwitchStates();
-            andGate3.TailNode1.SwitchStates();
-            andGate2.TailNode2.SwitchStates();
-            andGate3.TailNode2.SwitchStates();
+            node3.SwitchStates();
+            node4.SwitchStates();
+
+            andGate1.RegisterListener1(node3);
+            andGate1.RegisterListener2(node4);
+
+            node3.SwitchStates();
+            node4.SwitchStates();
+            node4.SwitchStates();
+            node3.SwitchStates();
         }
     }
-    
-    public enum ComponentState
-    {
-        Off = 0,
-        On = 1
-    }
-
-
 }

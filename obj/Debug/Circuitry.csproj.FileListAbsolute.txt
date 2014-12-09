@@ -1,5 +1,6 @@
 C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\bin\Debug\Circuitry.pdb
 C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\obj\Debug\Circuitry.pdb
-C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\bin\Debug\Circuitry.dll.config
-C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\bin\Debug\Circuitry.dll
-C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\obj\Debug\Circuitry.dll
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\bin\Debug\Circuitry.exe.config
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\bin\Debug\Circuitry.exe
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\obj\Debug\Circuitry.exe
+C:\Users\tsmith12\Documents\Visual Studio 2013\Projects\Fun\Circuitry\Circuitry\obj\Debug\Circuitry.csprojResolveAssemblyReference.cache

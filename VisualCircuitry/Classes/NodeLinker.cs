@@ -10,18 +10,24 @@ namespace VisualCircuitry.Classes
     {
         private static NodeLinker Instance { get; set; }
         private NodeLinker(){}
-        public Color Color { get; private set; }
+        //public Color Color { get; private set; }
 
-        public IComponent SelectedNode { get; private set; }
+        public Node SelectedNode { get; private set; }
 
         public static NodeLinker GetInstance()
         {
             return Instance ?? (Instance = new NodeLinker());
         }
 
-        public void SetSelectedComponent(IComponent selectedComponent)
+        public void SetSelectedNode(Node selectedNode)
         {
-            SelectedNode = selectedComponent;
+            SelectedNode = selectedNode;
+        }
+
+        public void RegisterListener(IComponent component)
+        {
+            if (SelectedNode != null)
+                SelectedNode.RegisterListener(component.HeadNode);
         }
 
         //public Color GetRandomColor()

@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Circuitry", "Circuitry.csproj", "{2734A6BD-CD36-4F77-925C-C615BF6C78CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualCircuitry", "VisualCircuitry\VisualCircuitry.csproj", "{292113B9-4439-4375-BE1D-3102A3B1FE89}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{2734A6BD-CD36-4F77-925C-C615BF6C78CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2734A6BD-CD36-4F77-925C-C615BF6C78CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2734A6BD-CD36-4F77-925C-C615BF6C78CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{292113B9-4439-4375-BE1D-3102A3B1FE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{292113B9-4439-4375-BE1D-3102A3B1FE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{292113B9-4439-4375-BE1D-3102A3B1FE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{292113B9-4439-4375-BE1D-3102A3B1FE89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

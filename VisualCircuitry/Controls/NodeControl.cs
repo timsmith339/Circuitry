@@ -28,11 +28,6 @@ namespace VisualCircuitry.Controls
             Node.StateSwitched += Node_StateSwitched;
         }
 
-        public void SetHeadNode(Node headNode)
-        {
-            Node.SetHeadNode(headNode);
-        }
-
         private void Node_StateSwitched(object sender, StateSwitchedEventArgs state)
         {
             nodeState.Text = state.State.ToString();
@@ -45,14 +40,13 @@ namespace VisualCircuitry.Controls
 
         private void nodeSelector_Click(object sender, EventArgs e)
         {
-            if (Linker.SelectedNode != null)
-                Linker.SelectedNode.SetHeadNode(Node);
+            Linker.SetSelectedNode(Node);
         }
 
         private void headNode_Click(object sender, EventArgs e)
         {
-            Linker.SetSelectedComponent(Node);
+            if (Linker.SelectedNode != null)
+                Linker.RegisterListener(Node);
         }
-
     }
 }

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2734A6BD-CD36-4F77-925C-C615BF6C78CF}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Circuitry</RootNamespace>
     <AssemblyName>Circuitry</AssemblyName>
@@ -44,12 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AndGate.cs" />
+    <Compile Include="Classes\Abstract\OneInputGate.cs" />
     <Compile Include="Classes\NotGate.cs" />
     <Compile Include="Classes\OrGate.cs" />
-    <Compile Include="Classes\AndGate.cs" />
     <Compile Include="Classes\Node.cs" />
-    <Compile Include="Classes\StateOutOfSyncException.cs" />
-    <Compile Include="Classes\StateSwitchedEventArgs.cs" />
+    <Compile Include="Things\Exceptions.cs" />
+    <Compile Include="Things\StateSwitchedEventArgs.cs" />
+    <Compile Include="Classes\Abstract\TwoInputGate.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="Interfaces\IComponent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -5,9 +5,7 @@ namespace Circuitry.Interfaces
 {
     public interface IComponent
     {
-        event Node.StateSwitchedHandler StateSwitched;
+        event StateSwitchedHandler StateSwitched;
         ComponentState State { get; }
-        Node HeadNode { get; }
-        void SetHeadNode(Node headNode);
     }
 }

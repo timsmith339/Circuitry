@@ -40,7 +40,7 @@ namespace VisualCircuitry.Controls
 
         private void headNode_Click(object sender, EventArgs e)
         {
-            Linker.SetSelectedComponent(OrGate);
+            Linker.SetSelectedNode(OrGate);
         }
 
         private void leftNodeSelector_Click(object sender, EventArgs e)

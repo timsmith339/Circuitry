@@ -28,11 +28,6 @@ namespace VisualCircuitry.Controls
             AndGate.StateSwitched += AndGate_StateSwitched;
         }
 
-        public void SetHeadNode(Node headNode)
-        {
-            AndGate.SetHeadNode(headNode);
-        }
-
         private void AndGate_StateSwitched(object sender, StateSwitchedEventArgs state)
         {
             andGateState.Text = state.State.ToString();
@@ -40,19 +35,18 @@ namespace VisualCircuitry.Controls
 
         private void headNode_Click(object sender, EventArgs e)
         {
-            Linker.SetSelectedComponent(AndGate);
+            if (Linker.SelectedNode != null)
+                Linker.RegisterListener(AndGate);
         }
 
         private void leftNodeSelector_Click(object sender, EventArgs e)
         {
-            if (Linker.SelectedNode != null)
-                Linker.SelectedNode.SetHeadNode(AndGate.TailNode1);
+            Linker.SetSelectedNode(AndGate.TailNode2);
         }
 
         private void rightNodeSelector_Click(object sender, EventArgs e)
         {
-            if (Linker.SelectedNode != null)
-                Linker.SelectedNode.SetHeadNode(AndGate.TailNode2);
+            Linker.SetSelectedNode(AndGate.TailNode1);
         }
     }
 }

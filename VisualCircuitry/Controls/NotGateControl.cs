@@ -29,11 +29,6 @@ namespace VisualCircuitry.Controls
             NotGate.StateSwitched += NotGate_StateSwitched;
         }
 
-        public void SetHeadNode(Node headNode)
-        {
-            NotGate.SetHeadNode(headNode);
-        }
-
         private void NotGate_StateSwitched(object sender, StateSwitchedEventArgs state)
         {
             notGateState.Text = state.State.ToString();
@@ -41,7 +36,7 @@ namespace VisualCircuitry.Controls
 
         private void headNode_Click(object sender, EventArgs e)
         {
-            Linker.SetSelectedComponent(NotGate);
+            Linker.SetSelectedNode(NotGate.TailNode);
         }
 
         private void tailodeSelector_Click(object sender, EventArgs e)
